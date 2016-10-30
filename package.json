@@ -4,7 +4,7 @@
   "description": "L.I.S.A. plugin example to learn how create them",
   "main": "index.js",
   "scripts": {
-    "test": "eslint && mocha"
+    "test": "eslint . && mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
     "plugin",
     "lisa-plugin"
   ],
+  "eslintConfig": {
+    "extends": "trails"
+  },
   "author": "jaumard",
   "license": "MIT",
   "bugs": {
@@ -24,6 +27,15 @@
   },
   "homepage": "https://github.com/mylisabox/lisa-plugin-example#readme",
   "dependencies": {
-    "lisa-plugin": "0.0.5"
+    "lisa-plugin": "^0.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.0",
+    "eslint-config-trails": "^1.0.8",
+    "lisa-box": "^0.0.10",
+    "lodash": "^4.16.4",
+    "mocha": "^3.1.2",
+    "smokesignals": "^1.2.2",
+    "trails": "^1.1.0"
   }
 }
