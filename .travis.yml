@@ -4,7 +4,6 @@ node_js:
 - 5
 - 6
 addons:
-  # Required to compile native modules on newer Node.js versions
   apt:
     sources:
     - ubuntu-toolchain-r-test
@@ -12,7 +11,7 @@ addons:
     - gcc-4.8
     - g++-4.8
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 notifications:
   email: false
   webhooks:
@@ -22,9 +21,9 @@ notifications:
     on_failure: change
 deploy:
   provider: npm
-  email: hello@mylisabox.com
+  email: jimmy.aumard@gmail.com
   api_key:
-    secure: Augq17lXXFKZPX92X2ITxwRkwEGqponSyzdCbqBOkoY8m1+8SxeduTyHhK1KHa4/DYgMpeTSyCMcqCftbm4Ngq6tva7sRgoHO64Mzd5jffAWzXIERHkDp+apiX4MetOHTRV5QxV3I/xzKD0GRuDw57HKra7OTJcCOiKqx6CIz2czUMsS4YxRpZIF3k9wtGSKjMW/36+eQj3bgM2lUl0pDOwaIvvY6sr1a6S0ks0YANE0xyxBdqd2Ceg77FZ5TpVODO36iF8D0C/ReviaCLMzU+4UQS6+HWmL7IUsZHBeiDslXbIcysRP3C+JCEkZvrjZ3cqMNQK0eWeCUcWmsrTzXDYXfyQiOiuJzrjKCute/H+GYomktXeWeGN+cHXQWWMwRsbPcZ2SVxW9fydyXrx6isIY+5wWHTxWdjswTRJ2K+y+x7XJ8BCyNc9y3IAviRq1oGBca42yPGUOOIzMxZS+l2+UZaKSwGs5fFTO1LnZHgANeR73T/8OkFgVy6KlqxP3damNVJ4BnYT1edZt+DP/oCsOo7h7DwNFGuS/Wo5G2vZx9gMtZbrHlARb2HNhenV+rhBH774Y7EPiNHkIAmG3yH8s8FDOOwCxPpI+l+UONzPIBGDCQxOFg3Pk0TCbNRa6MQ1jT5y9LzPLf7YC+FOsi4dM5Li4rHXcrHy8otnaggk=
+    secure: LOVtqNiZ830BcrF+d1CFbAwd6PJgfCHd+raS4u9Oe9mRHh8Y3KcMCwFJGGwnis8hTI6YdS7PFdw304TE00ErzywFWOdkyOOjCEUq6mVEod6ojeUOTSw9AKOYwv+JBw795QtBAKdxCi+07oPqqZN2wGicw0aFTlbt/+boT4k+Zqbm20j+l+EY6zdnqFG0aII8dToTMS0Nu1Dk71nv4UZrcNg2ajbOx0BYxls02NuOO17zQTw7RbCE33MBfdh4vZMFzR6sV/3XWEzg2BEF7z39OR0Crk1FP+tFSfHP7zlUom39GZoBQnrzBLKNndc8RF7OrB98ieFcDfviOx42A2th+GUKVJyg8QcS2zfoYROt4ZbXOprCdUE917OZW7ytG3jPE5KiONz7ge3pafGjZH+VP+bgi9EBhPYCyzpfB2Cvv7pR/CaXQXscUA3CJgbutI7MyhPUf7U+JNruOESnthX52EJ3TXCp0tncaJcJhPGJac7ZPMRSNQ7zXfsntDJO+k6yiXHwmUN7kmEXL456mNGvrglb8ZQuFlfyfTmxKRffl1BMpbNmpYVj1ddwB+TYpZQ1R4cCKHcBwkCQ0oEF8/p6R2CeB+x/9cxKOUqrwz5X6Zfe4l/pv3q4ijNsb9Tf5sTdhgEn7kixet9wqNT/tXeVX3p+bebmls6y57IpiToAV8A=
   on:
     tags: true
     repo: mylisabox/lisa-plugin-example
