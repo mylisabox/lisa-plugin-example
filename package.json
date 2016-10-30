@@ -1,6 +1,6 @@
 {
   "name": "lisa-plugin-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "L.I.S.A. plugin example to learn how create them",
   "main": "index.js",
   "scripts": {
