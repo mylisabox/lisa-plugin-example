@@ -1,0 +1,29 @@
+{
+  "name": "lisa-plugin-example",
+  "version": "0.0.1",
+  "description": "L.I.S.A. plugin example to learn how create them",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylisabox/lisa-plugin-example.git"
+  },
+  "keywords": [
+    "lisa",
+    "lisa-box",
+    "mylisabox",
+    "plugin",
+    "lisa-plugin"
+  ],
+  "author": "jaumard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mylisabox/lisa-plugin-example/issues"
+  },
+  "homepage": "https://github.com/mylisabox/lisa-plugin-example#readme",
+  "dependencies": {
+    "lisa-plugin": "0.0.5"
+  }
+}
