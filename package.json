@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mylisabox/lisa-plugin-example#readme",
   "dependencies": {
-    "lisa-plugin": "^0.0.6"
+    "lisa-plugin": "^0.0.10"
   },
   "devDependencies": {
     "eslint": "^3.9.0",
