@@ -4,7 +4,7 @@
   "description": "L.I.S.A. plugin example to learn how create them",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "eslint . && NODE_ENV=testing mocha"
   },
   "repository": {
     "type": "git",
