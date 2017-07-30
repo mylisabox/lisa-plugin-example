@@ -12,6 +12,8 @@ addons:
     # install toolchains
     - libmagic-dev
     - libatlas-base-dev
+    - alsa-tools
+    - alsa-utils
     - libzmq3-dbg
     - libzmq3-dev
     - libzmq3
