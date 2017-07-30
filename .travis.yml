@@ -3,13 +3,11 @@ node_js:
 - 6
 - 7
 addons:
-  # Required to compile native modules on newer Node.js versions
   apt:
     sources:
     - ubuntu-toolchain-r-test
     - llvm-toolchain-precise-3.9
     packages:
-    # install toolchains
     - libmagic-dev
     - libatlas-base-dev
     - libzmq3-dbg
@@ -19,7 +17,7 @@ addons:
     - g++-4.8
     - clang-3.8
 services:
-  - mongodb
+- mongodb
 env:
 - CXX=g++-4.8
 notifications:
@@ -33,7 +31,7 @@ deploy:
   provider: npm
   email: jimmy.aumard@gmail.com
   api_key:
-    secure: LOVtqNiZ830BcrF+d1CFbAwd6PJgfCHd+raS4u9Oe9mRHh8Y3KcMCwFJGGwnis8hTI6YdS7PFdw304TE00ErzywFWOdkyOOjCEUq6mVEod6ojeUOTSw9AKOYwv+JBw795QtBAKdxCi+07oPqqZN2wGicw0aFTlbt/+boT4k+Zqbm20j+l+EY6zdnqFG0aII8dToTMS0Nu1Dk71nv4UZrcNg2ajbOx0BYxls02NuOO17zQTw7RbCE33MBfdh4vZMFzR6sV/3XWEzg2BEF7z39OR0Crk1FP+tFSfHP7zlUom39GZoBQnrzBLKNndc8RF7OrB98ieFcDfviOx42A2th+GUKVJyg8QcS2zfoYROt4ZbXOprCdUE917OZW7ytG3jPE5KiONz7ge3pafGjZH+VP+bgi9EBhPYCyzpfB2Cvv7pR/CaXQXscUA3CJgbutI7MyhPUf7U+JNruOESnthX52EJ3TXCp0tncaJcJhPGJac7ZPMRSNQ7zXfsntDJO+k6yiXHwmUN7kmEXL456mNGvrglb8ZQuFlfyfTmxKRffl1BMpbNmpYVj1ddwB+TYpZQ1R4cCKHcBwkCQ0oEF8/p6R2CeB+x/9cxKOUqrwz5X6Zfe4l/pv3q4ijNsb9Tf5sTdhgEn7kixet9wqNT/tXeVX3p+bebmls6y57IpiToAV8A=
+    secure: b9erc9f2wQgKX+v/O8eL5MDNiBN4aMyhuxcicXjyoGNeMdddVtlgfGgdOgGK4qa85ED2wkeYHvnq3gweOxdndUyKhd/q8qPJMOPLwU9aMvXgQZk2x3unKdS9mwgNzTjuETahQ/OIGBvfht8FPsQGdV5H+qAbRU/Q1ZUUkBlaVyb3m7VZ1UBFOmutaPHt/94GjhB6QvTbngOB7QyIuvnlkGexsXf7v0pl+1BErlX6/j8OnHd+DFSg76jGB57dV2ZrywwP2SgTB4o6nCXXjj4nHvR4VU6q4u8EV1b4lWKPOyxkG4qNyF3KZuifnNtbAQL6g/UzjPiB7dOdfSb5NAggP/O04VeU/KICIk8uVysXZaKKH3fZMK3HvB65MoSJZK0qs3zwO+mMaF2HteK5IJgCAm+iX8WQPuBtsxLURuutre/WwkBHVNE4wDFABLii5gvzh+R95Ot4OcJfLZJyk1inxu50D/cBWPlhb4LYMz9DasXWYsHvfO00d2EQChLHtHfyCqSkkDdEHuoSthY/v4ICVCim2K3gd1PhHj1mG4u2Y4CL3dJLkio3zaQ3T+pAdFqjGJ8WsEI0NBxIvcTvYy4tSb/8RztA+7nQ3CA0wqitDIuv0fqtgUDWj1XbeyaE7vHBfqqUuaw7GADmZ6dosex6CJt1KtbeJWaI3NBZcEJADeY=
   on:
     tags: true
     repo: mylisabox/lisa-plugin-example
