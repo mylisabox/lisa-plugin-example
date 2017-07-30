@@ -1,16 +1,22 @@
 language: node_js
 node_js:
-- 4
-- 5
 - 6
 - 7
 addons:
+  # Required to compile native modules on newer Node.js versions
   apt:
     sources:
     - ubuntu-toolchain-r-test
+    - llvm-toolchain-precise-3.9
     packages:
+    # install toolchains
+    - libmagic-dev
+    - libatlas-base-dev
     - gcc-4.8
     - g++-4.8
+    - clang-3.8
+services:
+  - mongodb
 env:
 - CXX=g++-4.8
 notifications:

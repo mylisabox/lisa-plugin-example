@@ -6,7 +6,7 @@ const assert = require('assert')
 describe('Plugin', () => {
   let plugin
   before(() => {
-    plugin = global.app.packs.pluginsManager['example']
+    plugin = global.app.packs.pluginsManager.plugins['example']
   })
 
   it('should exist', () => {

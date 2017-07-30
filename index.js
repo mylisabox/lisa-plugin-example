@@ -34,7 +34,7 @@ module.exports = class ExamplePlugin extends Plugin {
   constructor(app) {
     super(app, {
       config: require('./config'),
-      api: require('./api'),
+      drivers: require('./drivers'),
       pkg: require('./package')
     })
   }

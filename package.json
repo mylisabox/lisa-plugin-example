@@ -1,6 +1,6 @@
 {
   "name": "lisa-plugin-example",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "L.I.S.A. plugin example to learn how create them",
   "main": "index.js",
   "scripts": {
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/mylisabox/lisa-plugin-example#readme",
   "dependencies": {
-    "lisa-plugin": "^0.0.10"
+    "lisa-plugin": "^0.0.15"
   },
   "devDependencies": {
-    "eslint": "^3.9.0",
-    "eslint-config-trails": "^1.0.8",
-    "lisa-box": "^0.0.10",
-    "lodash": "^4.16.4",
-    "mocha": "^3.1.2",
-    "smokesignals": "^1.2.2",
-    "trails": "^1.1.0"
+    "eslint": "^4.3.0",
+    "eslint-config-trails": "^3.0.0",
+    "lisa-box": "^0.0.21",
+    "lodash": "^4.17.4",
+    "mocha": "^3.4.2",
+    "smokesignals": "^3.0.3",
+    "trails": "^2.0.2"
   }
 }
